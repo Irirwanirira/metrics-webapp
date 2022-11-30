@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const url = 'https://disease.sh/v3/covid-19/countries';
+const url = 'https://disease.sh/v3/covid-19/continents';
 
 export const getCountries = createAsyncThunk('countries/fetchCountries', async () => {
   const resolve = await fetch(url);

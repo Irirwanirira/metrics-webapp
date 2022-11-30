@@ -27,7 +27,7 @@ const Home = () => {
               />
             </NavLink>
             <div className="update_countries">
-              <h3>{item.country}</h3>
+              <h3>{item.continent}</h3>
               <p>{item.updated}</p>
             </div>
           </div>
