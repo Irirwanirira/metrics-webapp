@@ -15,27 +15,24 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div >
-        <h1 className="live_preview" >
-          Live preview
-        </h1>
-        <div className="display_flex" >
+    <div>
+      <h1 className="live_preview">Live preview</h1>
+      <div className="display_flex">
         {countries.map((item) => (
-        <div key={uuidv4()} className="country_display">
-          <NavLink state={item} to="/details">
-            <FontAwesomeIcon
-              icon={faCircleArrowRight}
-              className="arrow-right"
-            />
-          </NavLink>
-          <div className="update_countries">
-            <p>{item.country}</p>
-            <p>{item.updated}</p>
+          <div key={uuidv4()} className="country_display">
+            <NavLink state={item} to="/details">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </NavLink>
+            <div className="update_countries">
+              <h3>{item.country}</h3>
+              <p>{item.updated}</p>
+            </div>
           </div>
-        </div>
-      ))}
-        </div>
-     
+        ))}
+      </div>
     </div>
   );
 };
