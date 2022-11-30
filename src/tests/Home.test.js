@@ -6,11 +6,11 @@ import store from '../redux/configureStore';
 describe('Missions', () => {
   it('It has to render the landing page', () => {
     const home = render(
-        <>
-          <Provider store={store}>
-            <Home />
-          </Provider>
-        </>,
+      <>
+        <Provider store={store}>
+          <Home />
+        </Provider>
+      </>,
     );
     expect(home).toMatchSnapshot();
   });
