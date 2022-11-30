@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getCountries } from '../redux/home/information';
 
 const Home = () => {
-  const { countries, status } = useSelector((state) => state.datas);
+  const { countries } = useSelector((state) => state.datas);
   const dispatch = useDispatch();
 
   useEffect(() => {

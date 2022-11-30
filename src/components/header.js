@@ -1,12 +1,12 @@
 import {
-    faCircleArrowLeft,
-    faGear,
-    faMicrophone,
-  } from '@fortawesome/free-solid-svg-icons';
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-  import { Link } from 'react-router-dom';
-  
-  const Heading = () => (
+  faCircleArrowLeft,
+  faGear,
+  faMicrophone,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+
+const Heading = () => (
       <nav className="nav_bar">
         <Link to="/">
           <FontAwesomeIcon icon={faCircleArrowLeft} id="arrow-left" />
@@ -17,7 +17,6 @@ import {
           <FontAwesomeIcon icon={faGear} className="icon_gear" />
         </div>
       </nav>
-  );
-  
-  export default Heading;
-  
+);
+
+export default Heading;
