@@ -15,16 +15,27 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div className="display_flex">
-      {countries.map((item) => (
-        <NavLink state={item} to="/details">
-          <div key={uuidv4()} className="country_display">
-          <FontAwesomeIcon icon={faCircleArrowRight} className="arrow-right" />
+    <div >
+        <h1 className="live_preview" >
+          Live preview
+        </h1>
+        <div className="display_flex" >
+        {countries.map((item) => (
+        <div key={uuidv4()} className="country_display">
+          <NavLink state={item} to="/details">
+            <FontAwesomeIcon
+              icon={faCircleArrowRight}
+              className="arrow-right"
+            />
+          </NavLink>
+          <div className="update_countries">
             <p>{item.country}</p>
             <p>{item.updated}</p>
           </div>
-        </NavLink>
+        </div>
       ))}
+        </div>
+     
     </div>
   );
 };
