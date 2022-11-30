@@ -5,39 +5,54 @@
 }
 
 .nav_bar {
-  margin: 2em 0;
+  margin: 2em 0.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #fff;
+}
+
+#arrow-left {
+  color: #fff;
+  font-size: 3em;
+}
+
+.icons {
+  display: flex;
+  gap: 1em;
+}
+
+.live_preview {
+  color: #fff;
+  /* text-align: center; */
+  background-color: rgb(126, 1, 95);
+  font-size: 15px;
+
 }
 
 .display_flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.display_flex:nth-child(2n) {
-  background-color: red;
-}
-
-.display_flex:nth-child(2n+1) {
-  background-color: rgb(142, 5, 110);
+  /* display: flex;
+  flex: wrap;
+  width: 30%;
+  justify-content: space-between; */
 }
 
 .country_display {
-  padding: 10px;
-  margin: 0.5em 1em;
-  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5em;
+  align-items: flex-end;
+  color: #fff;
+  padding: 1em;
 }
 
-.country_display:nth-child(2n) {
-  background-color: rgb(1, 1, 102);
+.country_display:nth-child(odd) {
+  background-color: rgb(142, 5, 110);
 }
 
-.country_display:nth-child(2n+1) {
-  background-color: rgb(5, 5, 237);
+.country_display:nth-child(even) {
+  background-color: rgb(126, 1, 95);
 }
 
 .main {
@@ -61,6 +76,10 @@
   text-align: center;
   background-color: rgb(126, 1, 95);
   font-size: 15px;
+}
+
+.arrow-right {
+  color: #fff;
 }
 
 .self_display p {
