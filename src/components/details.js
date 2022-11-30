@@ -1,20 +1,125 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Details = () => {
   const location = useLocation();
-  const {state } =  location;
+  const { state } = location;
 
   return (
-    <div>
+    <div className="details">
+      <div className="main">
       <h1>{state.country}</h1>
-      <p> Continent: {state.continent}</p>
-      <p> Cases: {state.cases}</p>
-      <p> Today's Case: {state.todayCases}</p>
-      <p> Death: {state.deaths}</p>
-      <p> Today's Death: {state.todayDeaths}</p>
-      <p> Recovered: {state.recovered}</p>
-      <p> Today's Recovered: {state.todayRecovered}</p>
-      <p> Tests:  {state.tests}</p>
+      <p>{state.updated}</p>
+      </div>
+     
+      <div className="self_display">
+        <h1>Live information</h1>
+        <p>
+          {" "}
+          Continent:{" "}
+          <span>
+            {state.continent}{" "}
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </Link>
+          </span>
+        </p>
+        <p>
+          {" "}
+          Cases:{" "}
+          <span>
+            {state.cases}{" "}
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </Link>
+          </span>
+        </p>
+        <p>
+          {" "}
+          Today's Case{" "}
+          <span>
+            {state.todayCases}{" "}
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </Link>
+          </span>
+        </p>
+        <p>
+          {" "}
+          Death{" "}
+          <span>
+            {state.deaths}{" "}
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </Link>
+          </span>
+        </p>
+        <p>
+          {" "}
+          Today's Death{" "}
+          <span>
+            {state.todayDeaths}{" "}
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </Link>
+          </span>
+        </p>
+        <p>
+          {" "}
+          Recovered{" "}
+          <span>
+            {state.recovered}{" "}
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </Link>
+          </span>
+        </p>
+        <p>
+          {" "}
+          Today's Recovered{" "}
+          <span>
+            {state.todayRecovered}{" "}
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </Link>
+          </span>
+        </p>
+        <p>
+          {" "}
+          Tests{" "}
+          <span>
+            {state.tests}{" "}
+            <Link to="/">
+              <FontAwesomeIcon
+                icon={faCircleArrowRight}
+                className="arrow-right"
+              />
+            </Link>
+          </span>
+        </p>
+      </div>
     </div>
   );
 };
