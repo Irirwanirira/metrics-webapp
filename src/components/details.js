@@ -47,7 +47,7 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Today's Case
+          Todays Case
           {' '}
           <span>
             {state.todayCases}
@@ -77,7 +77,7 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Today's Death
+          Todays Death
           {' '}
           <span>
             {state.todayDeaths}
@@ -95,7 +95,8 @@ const Details = () => {
           Recovered
           {' '}
           <span>
-            {state.recovered}{' '}
+            {state.recovered}
+            {' '}
             <Link to="/">
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
@@ -106,7 +107,7 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Today's Recovered
+          Todays Recovered
           {' '}
           <span>
             {state.todayRecovered}

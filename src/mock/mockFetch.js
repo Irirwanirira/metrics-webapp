@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 const country = {
   country: '',
   countryInfo: [],
@@ -18,7 +19,7 @@ export default async function mockFetch(url) {
       return {
         ok: true,
         status: 200,
-        json: async () => dogImagesResponse,
+        json: async () => country,
       };
     }
     default: {
