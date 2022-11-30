@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
-import { getCountries } from "../redux/home/information";
-import { v4 as uuidv4 } from "uuid";
-import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { getCountries } from '../redux/home/information';
 
 const Home = () => {
   const { countries, status } = useSelector((state) => state.datas);
