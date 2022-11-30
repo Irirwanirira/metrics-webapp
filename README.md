@@ -63,7 +63,8 @@ This is a react project that renders the COVID-19 updates from different countri
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://glittering-sherbet-18d841.netlify.app)
+- [Live Demo Link](https://drive.google.com/file/d/19B9XEZVirVMraL0VdvmGHVPx9NhJg8MU/view?usp=sharing)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,6 +151,8 @@ Example command:
 --->
 
 ### Deployment
+
+- [link to the project](https://glittering-sherbet-18d841.netlify.app)
 
 You can deploy this project using: (netlify)[https://app.netlify.com/login]
 - Run `npm start` in an intergrated terminal in order to start a local live server.
