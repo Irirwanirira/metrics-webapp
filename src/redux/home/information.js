@@ -2,13 +2,6 @@ import { createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 const url = 'https://disease.sh/v3/covid-19/countries'
 
-// const getData = async () => {
-//     const resolve = await fetch(url)
-//     const countries = await resolve.json();
-//     console.log('hello there')
-//     return countries;
-// }
-
 export const getCountries = createAsyncThunk('countries/fetchCountries', async () => {
     const resolve = await fetch(url)
     const countries = await resolve.json();
