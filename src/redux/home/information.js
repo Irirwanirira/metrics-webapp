@@ -37,11 +37,6 @@ const DataSlice = createSlice({
             fulfilled.status = 'fulfilled'
             fulfilled.countries = action.payload
         })
-
-       
-    
-    
     },
-
 });
 export default DataSlice.reducer;
