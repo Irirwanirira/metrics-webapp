@@ -27,7 +27,7 @@
 
 # 📖 Space-x-react-project <a name="about-project"></a>
 
-This is a react project that renders rocket data as well as mission data from an API onto the UI. This SPA allows users to reserve rockets and join mission, once that is done their data will be rendered onto a profile page showing what has been reserved and/or joined.
+This is a react project that renders the COVID-19 updates from different countries of the world, it displays the number of cases present per day, tests collected, deaths cases, and much more information, and all those information is obtained from the API and displayed on the UI.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -195,6 +195,15 @@ If you like this project...
 Feel free to give it a start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENT -->
+
+## 🙏 Acknowledgements <a name="acknowledgments">
+
+- Would like to thank Microveverse for the Project
+- I would like to thank (Nelson Sakwa)[https://www.behance.net/sakwadesignstudio] for his magical design
+- My coding partners
+- 
 
 <!-- FAQ (optional) -->
 

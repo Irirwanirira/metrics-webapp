@@ -9,17 +9,19 @@ const Details = () => {
   return (
     <div className="details">
       <div className="main">
-      <h1>{state.country}</h1>
-      <p>{state.updated}</p>
+        <h1>{state.country}</h1>
+        <p>{state.updated}</p>
       </div>
 
       <div className="self_display">
         <h1>Live information</h1>
         <p>
           {' '}
-          Continent:{' '}
+          Continent
+          {' '}
           <span>
-            {state.continent}{' '}
+            {state.continent}
+            {' '}
             <Link to="/">
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
@@ -30,9 +32,11 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Cases:{' '}
+          Cases
+          {' '}
           <span>
-            {state.cases}{' '}
+            {state.cases}
+            {' '}
             <Link to="/">
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
@@ -43,9 +47,11 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Today's Case{' '}
+          Today's Case
+          {' '}
           <span>
-            {state.todayCases}{' '}
+            {state.todayCases}
+            {' '}
             <Link to="/">
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
@@ -56,9 +62,11 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Death{' '}
+          Death
+          {' '}
           <span>
-            {state.deaths}{' '}
+            {state.deaths}
+            {' '}
             <Link to="/">
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
@@ -69,9 +77,11 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Today's Death{' '}
+          Today's Death
+          {' '}
           <span>
-            {state.todayDeaths}{' '}
+            {state.todayDeaths}
+            {' '}
             <Link to="/">
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
@@ -82,7 +92,8 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Recovered{' '}
+          Recovered
+          {' '}
           <span>
             {state.recovered}{' '}
             <Link to="/">
@@ -95,9 +106,11 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Today's Recovered{' '}
+          Today's Recovered
+          {' '}
           <span>
-            {state.todayRecovered}{' '}
+            {state.todayRecovered}
+            {' '}
             <Link to="/">
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
@@ -108,9 +121,11 @@ const Details = () => {
         </p>
         <p>
           {' '}
-          Tests{' '}
+          Tests
+          {' '}
           <span>
-            {state.tests}{' '}
+            {state.tests}
+            {' '}
             <Link to="/">
               <FontAwesomeIcon
                 icon={faCircleArrowRight}
