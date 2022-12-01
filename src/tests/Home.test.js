@@ -6,11 +6,11 @@ import store from '../redux/configureStore';
 describe('App function', () => {
   it('It has to has to render all the function ', () => {
     const home = render(
-        <>
-          <Provider store={store}>
-            <Home />
-          </Provider>
-        </>,
+      <>
+        <Provider store={store}>
+          <Home />
+        </Provider>
+      </>,
     );
     expect(home).toMatchSnapshot();
   });

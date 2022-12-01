@@ -1,6 +1,7 @@
+/* eslint-disable */
 import mockFetch from '../mock/mockFetch';
 import store from '../redux/configureStore';
-// import DataReducer from '../redux/home/reducer';
+import DataReducer from '../redux/home/reducer';
 
 const mockData = [{
   Country: 'Afghanistan',

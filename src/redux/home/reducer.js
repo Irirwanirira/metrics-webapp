@@ -16,7 +16,7 @@ export const fetchcountrydata = (payload) => ({
   type: FETCHCOUNTRYDATA,
   payload,
 });
-const sort = (payload) => ({
+export const sort = (payload) => ({
   type: SORT,
   payload,
 });
