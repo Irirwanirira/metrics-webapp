@@ -30,14 +30,17 @@ const Home = () => {
       ) : (
         <>
           <div className="search">
+            <div className='search_element'>
             <h1 className="live_preview">Live preview</h1>
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="search"
+              className="input"
             />
             <FontAwesomeIcon icon={faSearch} className="search_icon" />
+            </div>
           </div>
           <div className="display_flex">
             {countries

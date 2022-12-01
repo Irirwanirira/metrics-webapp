@@ -1,6 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
-import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {useLocation } from 'react-router-dom';
 
 const Details = () => {
   const location = useLocation();
@@ -22,12 +20,6 @@ const Details = () => {
           <span>
             {state.continent}
             {' '}
-            <Link to="/">
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                className="arrow-right"
-              />
-            </Link>
           </span>
         </p>
         <p>
@@ -37,12 +29,6 @@ const Details = () => {
           <span>
             {state.cases}
             {' '}
-            <Link to="/">
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                className="arrow-right"
-              />
-            </Link>
           </span>
         </p>
         <p>
@@ -52,12 +38,6 @@ const Details = () => {
           <span>
             {state.todayCases}
             {' '}
-            <Link to="/">
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                className="arrow-right"
-              />
-            </Link>
           </span>
         </p>
         <p>
@@ -67,12 +47,6 @@ const Details = () => {
           <span>
             {state.deaths}
             {' '}
-            <Link to="/">
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                className="arrow-right"
-              />
-            </Link>
           </span>
         </p>
         <p>
@@ -82,12 +56,6 @@ const Details = () => {
           <span>
             {state.todayDeaths}
             {' '}
-            <Link to="/">
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                className="arrow-right"
-              />
-            </Link>
           </span>
         </p>
         <p>
@@ -97,12 +65,6 @@ const Details = () => {
           <span>
             {state.recovered}
             {' '}
-            <Link to="/">
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                className="arrow-right"
-              />
-            </Link>
           </span>
         </p>
         <p>
@@ -112,12 +74,6 @@ const Details = () => {
           <span>
             {state.todayRecovered}
             {' '}
-            <Link to="/">
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                className="arrow-right"
-              />
-            </Link>
           </span>
         </p>
         <p>
@@ -127,12 +83,6 @@ const Details = () => {
           <span>
             {state.tests}
             {' '}
-            <Link to="/">
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                className="arrow-right"
-              />
-            </Link>
           </span>
         </p>
       </div>
