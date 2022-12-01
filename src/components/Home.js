@@ -18,7 +18,7 @@ const Home = () => {
     if (status === null) {
       dispatch(getCountries());
     }
-  }, [dispatch]);
+  });
 
   return (
     <div>
@@ -42,9 +42,8 @@ const Home = () => {
             {countries
               .filter(
                 (searchCountry) => searchCountry.continent
-                    .toLowerCase()
-                    .includes(search.toLowerCase()) 
-                    ||
+                  .toLowerCase()
+                  .includes(search.toLowerCase()) ||
                   searchCountry.continent
                     .toLowerCase()
                     .includes(search.toLowerCase()),
