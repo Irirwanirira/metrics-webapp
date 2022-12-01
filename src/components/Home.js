@@ -27,6 +27,7 @@ const Home = () => {
       ):(
         <>
         <div className='search'>
+        <h1 className="live_preview">Live preview</h1>
         <input 
           type="text"
           value={search}
@@ -37,10 +38,12 @@ const Home = () => {
           icon={faSearch}
           className="search_icon"
         />
+
+
         </div>
       
 
-        <h1 className="live_preview">Live preview</h1>
+       
 
         <div className="display_flex">
           {countries.filter((searchCountry) => searchCountry.continent.toLowerCase()
