@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: lato;
 }
 
 .nav_bar {
@@ -20,6 +21,16 @@
 .icons {
   display: flex;
   gap: 1em;
+}
+
+.search {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.search_icon {
+  margin-left: -20px;
 }
 
 .live_preview {
