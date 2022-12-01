@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getCountries } from '../redux/home/information';
+/* eslint-disable */
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -43,7 +44,8 @@ const Home = () => {
               .filter(
                 (searchCountry) => searchCountry.continent
                   .toLowerCase()
-                  .includes(search.toLowerCase()) ||
+                  .includes(search.toLowerCase()) 
+                ||
                   searchCountry.continent
                     .toLowerCase()
                     .includes(search.toLowerCase()),
