@@ -44,11 +44,10 @@ const Home = () => {
               .filter(
                 (searchCountry) => searchCountry.continent
                   .toLowerCase()
-                  .includes(search.toLowerCase()) 
-                ||
-                  searchCountry.continent
-                    .toLowerCase()
-                    .includes(search.toLowerCase()),
+                  .includes(search.toLowerCase())
+                || searchCountry.continent
+                  .toLowerCase()
+                  .includes(search.toLowerCase()),
               ).map((item) => (
                 <div key={uuidv4()} className="country_display">
                   <NavLink state={item} to="/details">
