@@ -152,7 +152,7 @@ Example command:
 
 ### Deployment
 
-- [link to the project](https://glittering-sherbet-18d841.netlify.app)
+- [link to the project](https://preeminent-treacle-2e03fb.netlify.app/)
 
 You can deploy this project using: (netlify)[https://app.netlify.com/login]
 - Run `npm start` in an intergrated terminal in order to start a local live server.
