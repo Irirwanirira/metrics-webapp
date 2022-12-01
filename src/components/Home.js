@@ -12,7 +12,7 @@ import { getCountries } from '../redux/home/information';
 const Home = () => {
   const dispatch = useDispatch();
   const { countries, status } = useSelector((state) => state.datas);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     if (status === null) {
@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div>
-      {status === "pending" ? (
+      {status === 'pending' ? (
         <div className="pending">
           <h3> Loading...</h3>
         </div>
@@ -41,13 +41,13 @@ const Home = () => {
           <div className="display_flex">
             {countries
               .filter(
-                (searchCountry) =>
+                (searchCountry) => searchCountry.continent
+                    .toLowerCase()
+                    .includes(search.toLowerCase()) 
+                    ||
                   searchCountry.continent
                     .toLowerCase()
-                    .includes(search.toLowerCase()) ||
-                  searchCountry.continent
-                    .toLowerCase()
-                    .includes(search.toLowerCase())
+                    .includes(search.toLowerCase()),
               ).map((item) => (
                 <div key={uuidv4()} className="country_display">
                   <NavLink state={item} to="/details">
