@@ -15,9 +15,7 @@ const DataSlice = createSlice({
     status: null,
   },
 
-  reducers: {
-
-  },
+  reducers: {},
 
   extraReducers(builder) {
     builder.addCase(getCountries.pending, (state) => {

@@ -2,9 +2,8 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
 import App from '../App';
-import mockFetch from '../mock/mockFetch';
 
-describe('App function', () => {
+describe('App function has to match the snapshot ', () => {
   it('It has to has to render all the function ', () => {
     const home = render(
       <>
@@ -15,8 +14,4 @@ describe('App function', () => {
     );
     expect(home).toMatchSnapshot();
   });
-
-  it('it renders the API ', (() => {
-    jest.spyOn(window, 'fetch').mockImplementation(mockFetch);
-  }));
 });

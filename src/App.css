@@ -90,14 +90,14 @@
 }
 
 .arrow-right {
-  color: #fff;
+  color: rgb(127, 203, 21);
   padding: 10px;
 }
 
 .self_display p {
   padding: 1em;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   color: white;
   font-size: 20px;

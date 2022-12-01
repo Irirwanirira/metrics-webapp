@@ -8,27 +8,27 @@ import { getCountries } from '../redux/home/information';
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { countries,status } = useSelector((state) => state.datas);
+  const { countries, status } = useSelector((state) => state.datas);
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    if(status === null){
-    dispatch(getCountries());
+    if (status === null) {
+      dispatch(getCountries());
     }
   }, [dispatch]);
 
   return (
     <div>
-      {status === 'pending'? (
+      {status === 'pending' ? (
         <div className='pending'>
           <p className='round' />
           <h3> Loading...</h3>
         </div>
-      ):(
+      ) : (
         <>
         <div className='search'>
         <h1 className="live_preview">Live preview</h1>
-        <input 
+        <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -38,19 +38,13 @@ const Home = () => {
           icon={faSearch}
           className="search_icon"
         />
-
-
         </div>
-      
-
-       
-
         <div className="display_flex">
           {countries.filter((searchCountry) => searchCountry.continent.toLowerCase()
-          .includes(search.toLowerCase())
+            .includes(search.toLowerCase())
           || searchCountry.continent.toLowerCase().includes(search.toLowerCase()))
-          
-          .map((item) => (
+
+            .map((item) => (
             <div key={uuidv4()} className="country_display">
               <NavLink state={item} to="/details">
                 <FontAwesomeIcon
@@ -63,7 +57,7 @@ const Home = () => {
                 <p>{item.updated}</p>
               </div>
             </div>
-          ))}
+            ))}
         </div>
       </>
       )}
