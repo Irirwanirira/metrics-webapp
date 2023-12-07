@@ -25,9 +25,13 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space-x-react-project <a name="about-project"></a>
+# 📖 Metrics-webapp <a name="about-project"></a>
 
 This is a react project that renders the COVID-19 updates from different countries of the world, it displays the number of cases present per day, tests collected, deaths cases, and much more information, and all those information is obtained from the API and displayed on the UI.
+
+### Deployment
+
+- [link to the project](https://preeminent-treacle-2e03fb.netlify.app/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -59,16 +63,7 @@ This is a react project that renders the COVID-19 updates from different countri
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://drive.google.com/file/d/19B9XEZVirVMraL0VdvmGHVPx9NhJg8MU/view?usp=sharing)
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -141,7 +136,7 @@ Example command:
 ### Run tests
 
 To run tests, run the following command:
-- Run `npm test` in an intergrated terminal to run automated tests.
+- Run the `npm test` in an integrated terminal to run automated tests.
 <!--
 Example command:
 
@@ -149,20 +144,6 @@ Example command:
   bin/rails test test/models/article_test.rb
 ```
 --->
-
-### Deployment
-
-- [link to the project](https://preeminent-treacle-2e03fb.netlify.app/)
-
-You can deploy this project using: (netlify)[https://app.netlify.com/login]
-- Run `npm start` in an intergrated terminal in order to start a local live server.
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
